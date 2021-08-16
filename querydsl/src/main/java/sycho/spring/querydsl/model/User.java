@@ -1,4 +1,4 @@
-package sycho.spring.querydsl;
+package sycho.spring.querydsl.model;
 
 import com.querydsl.core.annotations.QueryProjection;
 import lombok.*;

@@ -1,4 +1,4 @@
-package sycho.spring.querydsl;
+package sycho.spring.querydsl.util;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
