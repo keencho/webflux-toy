@@ -8,7 +8,7 @@ import sycho.spring.querydsl.queryprojectionbuilder.QueryProjectionBuilder;
 @Setter
 //@Service
 @QueryProjectionBuilder
-public class UserDTO {
+public class AccountDTO {
     private String name;
     private int age;
     private String loginId;
@@ -16,7 +16,7 @@ public class UserDTO {
 
     @QueryProjection
     @QueryProjectionBuilder
-    public UserDTO(String name, int age, String loginId, String password) {
+    public AccountDTO(String name, int age, String loginId, String password) {
         this.name = name;
         this.age = age;
         this.loginId = loginId;

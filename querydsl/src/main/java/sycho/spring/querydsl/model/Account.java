@@ -1,7 +1,9 @@
 package sycho.spring.querydsl.model;
 
-import com.querydsl.core.annotations.QueryProjection;
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
@@ -9,8 +11,8 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "user")
-public class User {
+@Table(name = "account")
+public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,7 +23,7 @@ public class User {
     private String password;
 
     @Builder
-    public User(String name, int age, String loginId, String password) {
+    public Account(String name, int age, String loginId, String password) {
         this.name = name;
         this.age = age;
         this.loginId = loginId;
