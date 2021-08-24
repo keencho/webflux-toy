@@ -1,4 +1,4 @@
-package sycho.spring.querydsl.model;
+package sycho.spring.basic.model;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -28,5 +28,10 @@ public class Account {
         this.age = age;
         this.loginId = loginId;
         this.password = password;
+    }
+
+    public void updateNameAndAge(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 }
